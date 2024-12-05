@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 05, 2024 at 06:54 AM
+-- Generation Time: Dec 05, 2024 at 07:03 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -54,22 +54,6 @@ CREATE TABLE `tblmatching` (
   `matching_gender` varchar(150) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `tblmatching`
---
-
-INSERT INTO `tblmatching` (`matching_id`, `matching_id_number`, `matching_temp_id`, `matching_room_number`, `matching_gender`) VALUES
-(1, '456', 1, 'A6520', 'Female'),
-(2, '123', 1, 'P3730', 'Male'),
-(3, '7878', 1, 'P3730', 'Female'),
-(4, 'heuawe', 2, 'P3730', 'Female'),
-(7, '4561', 2, 'P3730', 'Male'),
-(8, '456123', 3, 'P3730', 'Male'),
-(10, '02-2223-02022', 1, 'E4663', 'Female'),
-(12, '02-2223-09909', 1, 'E4663', 'Male'),
-(14, '202020', 2, 'A6520', 'Female'),
-(15, '2121', 2, 'E4663', 'Male');
-
 -- --------------------------------------------------------
 
 --
@@ -80,26 +64,6 @@ CREATE TABLE `tblrooms` (
   `rooms_id` int(11) NOT NULL,
   `rooms_number` varchar(150) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `tblrooms`
---
-
-INSERT INTO `tblrooms` (`rooms_id`, `rooms_number`) VALUES
-(1, 'P3730'),
-(2, 'A6520'),
-(3, 'F7810'),
-(4, 'C5841'),
-(5, 'J5910'),
-(6, 'J4819'),
-(7, 'F9675'),
-(8, 'M0832'),
-(9, 'Y9270'),
-(10, 'Y9453'),
-(11, 'H3550'),
-(12, 'J6703'),
-(13, 'N9973'),
-(14, 'E4663');
 
 --
 -- Indexes for dumped tables
@@ -138,13 +102,13 @@ ALTER TABLE `tbladmin`
 -- AUTO_INCREMENT for table `tblmatching`
 --
 ALTER TABLE `tblmatching`
-  MODIFY `matching_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `matching_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tblrooms`
 --
 ALTER TABLE `tblrooms`
-  MODIFY `rooms_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `rooms_id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
